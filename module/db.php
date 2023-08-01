@@ -4,7 +4,7 @@ define("DB_HOST", "inthava-db-do-user-14392713-0.b.db.ondigitalocean.com");
 define("DB_NAME", "laodev_db");
 define("PORT", 25060);
 define("DB_USER", "doadmin");
-define("DB_PASS", "AVNS__s1Q9IsO_kg_WzKVuuw ");
+define("DB_PASS", "AVNS__s1Q9IsO_kg_WzKVuuw");
 
 
 class Database
