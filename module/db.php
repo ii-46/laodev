@@ -1,9 +1,10 @@
 <?php
 
-define("DB_HOST", "localhost");
-define("DB_NAME", "dev_planet");
-define("DB_USER", "root");
-define("DB_PASS", "");
+define("DB_HOST", "inthava-db-do-user-14392713-0.b.db.ondigitalocean.com");
+define("DB_NAME", "laodev_db");
+define("PORT", 25060);
+define("DB_USER", "doadmin");
+define("DB_PASS", "AVNS__s1Q9IsO_kg_WzKVuuw ");
 
 
 class Database
@@ -17,7 +18,8 @@ class Database
     }
     private function connect_db()
     {
-        $this->connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+        // connect to database with port 25060 
+        $this->connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME, PORT);   
         if (mysqli_error($this->connection)) {
             die("connect to database failed " . mysqli_connect_error($this->connection));
         } else {
