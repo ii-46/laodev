@@ -1,0 +1,8 @@
+spec:
+  name: laodev
+  services:
+    - environment_slug: php
+      git:
+        branch: main
+        repo_clone_url: https://github.com/ii-46/laodev.git
+      name: laodev

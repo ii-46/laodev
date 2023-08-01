@@ -1,0 +1,8 @@
+name: laodev
+services:
+  - environment_slug: php
+    github:
+      branch: main
+      deploy_on_push: true
+      repo: ii-46/laodev
+    name: laodev
